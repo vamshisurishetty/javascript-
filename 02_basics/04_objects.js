@@ -52,13 +52,30 @@ const users = [
 ]
 
 // console.log(users[1].email);
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn")); // we get output true because in tinderUser we have isLoggedIn key 
-console.log(tinderUser.hasOwnProperty("function")); // we get output false because in tinderUser we donr have function key 
+// console.log(tinderUser.hasOwnProperty("isLoggedIn")); // we get output true because in tinderUser we have isLoggedIn key 
+// console.log(tinderUser.hasOwnProperty("function")); // we get output false because in tinderUser we donr have function key 
 //this "hasOwnProperty" method check's that if an object have an key or not.
+
+
+
+//de-structuring
+
+const course = {
+    courseName: "javascript",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// const {courseInstructor} = course
+// console.log(courseInstructor);
+
+const {courseInstructor: instructor} = course
+console.log(instructor);
+console.log(course.courseInstructor);
 
