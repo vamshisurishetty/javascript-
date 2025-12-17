@@ -51,26 +51,29 @@ if(true){
         console.log(username + website); 
         console.log(website);
     }
-    // console.log(website);
+    // console.log(website); error
     console.log(username);
 }
-// console.log(username);
+// console.log(username); error
 
 
 // +++++++++++++ intresting thing +++++++++++++++++
 
 
 console.log(addOne(5));
-function addOne(num){
+function addOne(num){ 
     return num + 1
-}
+} // function decleration(here we just defined a function)
 // addOne(5)
 
 
 
 // console.log(addTwo(5));
-const addTwo = function(num){
+const addTwo = function(num){  
     return num + 2
-}
+} // function expression(here we defined a function and stored that function in a variable)
 // addTwo(5)
 // console.log(addTwo(5));
+// In a function expression, you create a function and assign it to a variable. The function does not have its own name; instead, the variable name is used to call it.
+
+// In your example, addTwo holds the function, and you can call the function using addTwo(5). Also, function expressions are not hoisted, which is why calling addTwo(5) before defining it would cause an error.
