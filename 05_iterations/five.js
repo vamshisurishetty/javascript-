@@ -1,4 +1,5 @@
 //commonly used loops
+//forEach
 
 
 const coding = ["js", "ruby", "java", "cpp", "python"]
